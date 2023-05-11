@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX05_테이블태그</title>
+</head>
+<body>
+
+     <!-- ✔ 테이블을 만들겠다고 선언하는 공간 : <table></table> -->
+
+    <table border="1px solid black">
+        <!--  ✔ 테이블의 한 줄을 생성하는 방법 : tr(table row)-->
+
+        <tr>
+            <th>이름</th>
+            <th>나이</th>
+
+        </tr>
+        
+        <tr>
+            <!-- ✔ 테이블의 한 칸 데이터를 넣어주는 공간 : td(table data)
+                 ✔ 표의 헤더 부분을 작성할때 용이 : th(table hearder)
+                 ✔ a > img , tr*3>td*2 등의 활용
+                -->
+            <td>성록</td>
+            <td>26</td>
+        </tr>
+        <tr>
+            <td>가나다</td>
+            <td>52</td>
+        </tr>
+
+    </table>
+
+    <br>
+    <br>
+    <br>
+
+    <table border="1px solid black">
+        <tr>
+            <td>이름</td>
+            <td> <input type="" name="" id=""></td> 
+        </tr>
+        <tr>
+            <td>성별</td>
+            <td> 
+                <input type="radio" name = "gender" value="">여자 
+                <input type="radio" name = "gender" value="">남자
+            </td>
+        </tr>
+        <tr>
+            <td>좋아하는 음식</td>
+            <td >
+                <input type="checkbox" name = "hobby" value="sc">햄버거  
+                <input type="checkbox" name = "hobby" value="bs">피자
+                <input type="checkbox" name = "hobby" value="bk">치킨
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center"><input type="submit" name="" id=""></td>
+        </tr>
+    </table>
+
+    <br>
+    <br>
+    <br>
+    <!-- <병합 기능>
+        ✔ 위/아래를 병합 : rowspan
+        ✔ 좌/우를 병합 : colspan
+        ✔ 값에는 병합할 칸의 갯수
+    -->
+    
+    <table border="1px solid black">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td colspan="2">3</td>
+        </tr>
+        <tr>
+            <td rowspan="2">4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+        </tr>
+
+    </table>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <table border="1px solid black">
+
+        <tr>
+            <th>이름</th>
+            <th>나이</th>
+            <th>성별</th>
+        </tr>
+        <tr>
+            <td>김성록</td>
+            <td rowspan="5">20</td>
+            <td rowspan="3">남자</td>
+        </tr>
+        <tr>
+            <td>조인성</td>
+        </tr>
+        <tr>
+            <td>이민혁</td>
+        </tr>
+        <tr>
+            <td>이경진</td>
+            <td rowspan="2">여자</td>
+        </tr>
+        <tr>
+            <td>정유진</td>
+        </tr>
+       
+
+    </table>
+
+
+
+
+
+
+
+
+</body>
+</html>
